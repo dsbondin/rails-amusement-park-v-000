@@ -1,17 +1,22 @@
 <h1>User Page</h1>
 
 <p>
-  Name: <%= @user.name %>
+  Name: <%= current_user.name %>
 </p
 
 <p>
-  Tickets: <%= @user.tickets %>
+  Tickets: <%= current_user.tickets %>
 </p
 
 <p>
-  Mood: <%= @user.mood %>
+  Mood: <%= current_user.mood %>
 </p
 
 <p>
-  Height: <%= @user.height %>
+  Height: <%= current_user.height %>
+</p
+
+
+<p>
+  <%= "ADMIN" if current_user.admin %>
 </p
