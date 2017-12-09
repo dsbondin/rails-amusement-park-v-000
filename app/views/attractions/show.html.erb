@@ -1,0 +1,7 @@
+<h1><%= @attraction.name %></h1>
+
+<p>Cost: <%= @attraction.tickets %></p>
+<p>Nausea Rating: <%= @attraction.nausea_rating %></p>
+<p>Happiness Rating: <%= @attraction.happiness_rating %></p>
+<p>Minimum Height: <%= @attraction.min_height %></p>
+<p><%= button_to "Go on this ride", controller: "rides", action: "ride", method: "post" %></p>
