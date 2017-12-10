@@ -1,8 +1,6 @@
-<h1>User Page</h1>
+<%= flash[:notice] if flash[:notice] %>
 
-<p>
-  Name: <%= current_user.name %>
-</p
+<h1><%= current_user.name %></h1>
 
 <p>
   Tickets: <%= current_user.tickets %>
